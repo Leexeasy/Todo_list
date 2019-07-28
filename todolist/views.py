@@ -2,7 +2,9 @@ from django.shortcuts import render, redirect
 from .models import Todo
 # Create your views here.
 
-lst=[]
+def index(request):
+    return redirect("todolist:主页")
+
 def home(request):
 
     if request.method == "POST":
